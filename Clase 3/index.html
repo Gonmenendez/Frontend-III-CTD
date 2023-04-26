@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Class 3</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const headerButtons = ['Home', 'About', 'Career', 'Education']
+
+const HeaderButton = (props) => {
+    const buttons = props.button.map((btn, index) => <button key={index}><a href={'#'}>{btn}</a></button>)
+    return <header>{buttons}</header>
+}
+
+const Img = () => {
+    return <img src={'assets/JenniferLawrence.PNG'}/>
+}
+
+const Information = () => {
+    return (
+        <section>
+            <div>
+                <h4>Personal information:</h4>
+                <p>Jennifer Shrader Lawrence (Indian Hills, Kentucky); 15 de agosto de 1990 - es una actriz estadounidense. También ha incursionado en la producción cinematográfica. La actriz mejor pagada del mundo en 2015 y 2016, sus películas han recaudado más de $6 mil millones en todo el mundo hasta la fecha. Apareció en la lista de las 100 personas más influyentes del mundo de Time en 2013 y en la lista Forbes Celebrity 100 de 2013 a 2016.</p>
+            </div>
+            <div>
+                <h4>Name:</h4>
+                <p>Jennifer</p>
+            </div>
+            <div>
+                <h4>Last Mame:</h4>
+                <p>Lawrence</p>
+            </div>
+            <div>
+                <h4>Age:</h4>
+                <p>32</p>
+            </div>
+            <div>
+                <h4>Experience in movies:</h4>
+                <ul>
+                    <li>- Passenger</li>
+                    <li>- Hunger Games (Saga)</li>
+                    <li>- Don't look up</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Education:</h4>
+                <ul>
+                    <li>- Kammerer Middle School</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Bio:</h4>
+                <p>Durante su infancia, Lawrence actuó en obras de teatro de la iglesia y musicales escolares. A los 14 años, un cazatalentos la descubrió mientras estaba de vacaciones en la ciudad de Nueva York con su familia. Se mudó a Los Ángeles y comenzó su carrera como actriz con papeles como invitada en televisión. Su primer papel importante fue como miembro principal del reparto en la comedia de situación The Bill Engvall Show (2007-2009). Hizo su debut cinematográfico con un papel secundario en el drama Garden Party (2008), y tuvo su gran avance interpretando a una adolescente asolada por la pobreza en el drama de misterio independiente Winter's Bone (2010). La carrera de Lawrence progresó con papeles protagónicos como la mutante Mystique en la serie de películas X-Men (2011-2019) y Katniss Everdeen en la serie de películas Los juegos del hambre (2012-2015). Este último la convirtió en la heroína de acción más taquillera de todos los tiempos.</p>
+            </div>
+        </section>
+    )
+}
+
+ReactDOM.render(
+    <React.Fragment>
+        <HeaderButton button={headerButtons}/>
+        <div className={'main'}>
+            <Img/>
+            <Information/>
+        </div>
+    </React.Fragment>,
+    document.getElementById("root")
+)
+    </script>
+</body>
+</html>

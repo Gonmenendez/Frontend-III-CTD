@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+}
+
+.nave{
+  background-color: red;
+}
+
+h1{
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+}
+
+nav{
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerSections{
+  color: black;
+  text-decoration: none;
+}
+
+.headerSections:hover{
+  color: white;
+}
+
+.headerSections:active{
+  -webkit-text-stroke: 2px black;
+}
+
+.pokesite{
+  width: 15rem;
+  align-self: center;
+}
+
+.pokedex{
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+.pokemons{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.pokemons:hover{
+  color: red;
+}
+
+.pokemon{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.pokemon h2{
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.movesBtn{
+  width: 7rem;
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.movesBtn:hover, .button:hover{
+  background-color: red;
+}
+
+.movesBtn:active, .button:active{
+  font-weight: bold;
+  border: solid 2px black;
+  background-color: white;
+}
+
+img{
+  width: 10rem;
+}
+
+.moves{
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+.flexTypes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemonTypes{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+
+.type{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.type:hover{
+  color: red;
+}
+
+.button{
+  width: 7rem;
+  height: 2rem;
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.a{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filteredPokemons{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
